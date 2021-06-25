@@ -1,0 +1,215 @@
+/*-----------------------------------------------------------------------------------
+
+	Template Name: Version College
+	Template URI: http://coderitem.com
+	Description: This is Version College web site. 
+	Author: SA Bappy
+	Author URI: http://sabappy.com
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+	1. Typography
+	2. Header Area 
+	3. About Area
+	4. Skills Area
+
+-----------------------------------------------------------------------------------*/
+/*****************************************************/
+/**************    1. Typography   *******************/
+/*****************************************************/
+* { margin: 0; padding: 0; }
+
+body { font-family: 'Open Sans', sans-serif; font-size: 16px; line-height: 18px; color: #000000; background: #FFFFFF; }
+
+a { text-decoration: none; display: inline-block; }
+
+a:hover { text-decoration: none; }
+
+h1, h2, h3, h4, .item h4, h5, h6, p { margin: 0; padding: 0; }
+
+textarea { margin-top: 40px; min-height: 200px; resize: none; }
+
+img { border: none; max-width: 100%; }
+
+ul { list-style: none; margin: 0; padding: 0; }
+
+li { list-style: none; }
+
+button:focus { border: none; outline: none; box-shadow: none; }
+
+input:focus { border: none; outline: none; box-shadow: none; }
+
+.justify-center { justify-content: center; }
+
+.align-center { align-items: center; }
+
+.no-padding { padding: 0; }
+
+.justify-start { justify-content: flex-start; }
+
+.gap { margin-top: 100px; }
+
+.gap-p { padding-top: 50px; }
+
+.pt { padding-top: 100px; }
+
+.align-center { align-items: center; }
+
+.justify-center { justify-content: center; }
+
+.sa, .c1, .d1, .about-area a { min-width: 145px; line-height: 50px; padding: 0 30px; font-weight: 600; text-transform: uppercase; cursor: pointer; }
+
+.btn, .me > button:hover .me > button:focus, .about-area a { box-shadow: -1px 10px 20px #ddd; transition-duration: 0.25s; }
+
+.h2, .about-area h2, .s-head h2, .ac-header h2, .e-head h2 { text-transform: uppercase; font-size: 36px; font-weight: 500; }
+
+h4, .item h4 { margin: 25px 0; font-size: 24px; font-weight: 700; }
+
+/*****************************************************/
+/**************    2. Hero Area   ****************/
+/*****************************************************/
+.main-header-area { padding: 10px 0; background: #ddd; opacity: 0.9; box-shadow: 0 4px 20px #ddd; }
+
+.logo-area { display: inline-block; }
+
+.menu-area { text-align: right; }
+.menu-area ul li { display: inline-block; padding: 5px 0px; margin: 0 15px; }
+.menu-area ul li a { font-weight: 600; color: #212121; text-transform: uppercase; line-height: 20px; }
+.menu-area ul li:hover { border-bottom: 2px solid #212121; }
+
+.hero-area { background: url(img/hero.jpg); height: 100vh; background-repeat: no-repeat; background-size: 100% 100%; }
+
+.h-content { padding-top: 24%; }
+.h-content h2 { font-size: 46px; font-weight: 700; margin: 0 0 15px; text-transform: uppercase; }
+.h-content p { font-size: 22px; margin-bottom: 30px; line-height: 1; }
+
+.c1 { border-radius: 1px; background: #212121; color: #fff; }
+
+.d1 { border: 1px solid #212121; background: transparent; color: #212121; }
+
+.person img { padding: 63px 0 0 59px; }
+
+/*****************************************************/
+/**************    3. About Area   ****************/
+/*****************************************************/
+.about-main-area { margin-top: 6%; background: transparent; }
+
+.about-area { text-align: center; }
+.about-area img { margin: 15px 0 48px 0; }
+.about-area p { line-height: 1.42857143; margin-bottom: 35px; }
+.about-area a { background: #212121; color: #fff; border-radius: 0; }
+
+/*****************************************************/
+/**************    4. Skills Area     ******************/
+/*****************************************************/
+.skills-main-area { margin-top: 8%; margin-bottom: 5%; }
+
+.s-head { text-align: center; }
+.s-head img { margin: 15px 0 48px 0; }
+
+.percentCount { display: none; }
+
+.s-items { display: grid; grid-template-columns: 350px 350px 350px; grid-column-gap: 20px; }
+
+.item-1 h4 { text-transform: uppercase; line-height: 1.1; font-weight: 500; }
+
+.proggress { background: #212121; }
+
+/*****************************************************/
+/**************    5. About Self Area  ****************/
+/*****************************************************/
+.about-self-area { background: url(img/services-bg2.jpg) no-repeat fixed center/cover; width: 100%; height: 400px; padding-top: 250px; margin-bottom: 90vh; }
+
+.about-self { background: #fff; padding: 120px 100px; box-shadow: 0px 0px 40px 8px rgba(0, 0, 0, 0.2); height: 650px; }
+
+.ac-header { text-align: center; }
+.ac-header img { margin: 15px 0 48px 0; }
+
+.ac-items { display: flex; justify-content: center; }
+
+.item { text-align: center; padding: 28px; }
+.item p { font-size: 18px; line-height: 1.50; }
+
+/*****************************************************/
+/**************    6. Exparience Area  ****************/
+/*****************************************************/
+.e-head { text-align: center; }
+.e-head img { margin: 15px 0 48px 0; }
+
+.exparience-list { display: grid; grid-template-columns: 360px 360px 360px; grid-row-gap: 20px; grid-column-gap: 20px; }
+
+.el { position: relative; }
+
+.el::before { content: ""; width: 360px; height: 240px; display: block; position: absolute; transition: background-color 0.25s ease-in-out; opacity: 0; z-index: 1; }
+
+.el:hover::before { background: #212121; opacity: 0.5; }
+
+.img-info-area { position: absolute; z-index: 999; color: #fff; top: 40%; left: 0; opacity: 0; transition: opacity 0.25s ease-in-out, left 0.25s ease-in-out; }
+.img-info-area h4 { font-weight: 700; color: #fff; font-size: 30px; margin: 20px 0; }
+
+.el:hover .img-info-area { left: 68px; opacity: 1; }
+
+.sm { height: 33vh; }
+
+.info-icons a { margin-right: 5%; }
+.info-icons a i { color: #fff; font-size: 15px; padding: 3px 6px; border: 1px solid #fff; border-radius: 100%; font-weight: bold; }
+.info-icons a i:hover { background: #fff; color: #212121; }
+
+.pad { margin-bottom: 5%; }
+
+/*****************************************************/
+/**************    7. Exparience Count-down Area  ****************/
+/*****************************************************/
+.ex-countdown { background: url(img/counters-bg2.jpg) no-repeat fixed center/cover; width: 100%; height: 400px; display: flex; justify-content: center; align-items: center; }
+
+.e-count { text-align: center; }
+.e-count h2 { font-size: 100px; font-weight: 300; color: #fff; line-height: 0.8; padding-bottom: 25px; }
+.e-count h6 { font-size: 30px; font-weight: 500; color: #fff; }
+
+/*****************************************************/
+/**************    8. Contact Contact Area  ****************/
+/*****************************************************/
+.contact-main-area { margin-top: 6.5%; background: transparent; }
+
+.c-header { text-align: center; padding-bottom: 25px; }
+
+.c-header h2 { font-size: 36px; text-transform: uppercase; }
+.c-header img { margin: 15px 0 40px; }
+
+.add-1 input { width: 100%; color: #212121; border: 1px solid #eae9e9; border-bottom: 1px solid #000; border-top-width: 2px; padding: 6px 10px; }
+.add-1 input:hover { border: none; border-bottom: 2px solid #ddd; }
+
+.add-2 input { width: 100%; color: #212121; border: 1px solid #eae9e9; border-bottom: 1px solid #000; border-top-width: 2px; padding: 6px 10px; }
+
+.msg textarea { width: 100%; padding: 5px 10px; border: 1px solid #eae9e9; border-bottom: 1px solid #000; }
+.msg .msg textarea:hover { border: none; border-bottom: 2px solid #ddd; box-shadow: -1px 10px 20px #ddd; }
+
+.c-button { margin-top: 40px; text-align: center; }
+.c-button button { background: transparent; padding: 15px 30px; color: #212121; border: 1px solid #212121; text-transform: uppercase; cursor: pointer; }
+.c-button button h6 { margin: 0; font-weight: 700; font-size: 16px; }
+.c-button button:hover { box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.15); }
+
+/*****************************************************/
+/**************    8. Footer Area  ****************/
+/*****************************************************/
+.footer-main-area { background: #212121 no-repeat fixed center/cover; width: 100%; height: 20vh; margin-top: 7%; display: flex; justify-content: center; align-items: center; }
+
+.ftr-social-ber a i { color: #fff; border: 1px solid #fff; border-radius: 100%; width: 36px; height: 36px; display: flex; justify-content: center; align-items: center; transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out; }
+.ftr-social-ber a i:hover { background: #fff; color: #007bff; }
+
+.copyright-text p { color: #fff; text-align: center; }
+
+#button { display: inline-block; background-color: #FF9800; width: 50px; height: 50px; text-align: center; border-radius: 4px; position: fixed; bottom: 30px; right: 30px; transition: background-color .3s,  opacity .5s, visibility .5s; opacity: 0; visibility: hidden; z-index: 1000; }
+
+#button::after { content: "\f077"; font-family: FontAwesome; font-weight: normal; font-style: normal; font-size: 2em; line-height: 50px; color: #fff; }
+
+#button:hover { cursor: pointer; background-color: #333; }
+
+#button:active { background-color: #555; }
+
+#button.show { opacity: 1; visibility: visible; }
+
+/*# sourceMappingURL=style.css.map */
